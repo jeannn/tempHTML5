@@ -64,6 +64,7 @@
     </style>
 </head>
 <body>
+    <script src="scriptP.js"></script>
     <header>
         <div>Jean M</div>
         <nav>
@@ -198,75 +199,93 @@
     </section>
 
     <!-- ===== Recommendations Section ===== -->
-    <section id="recommandations">
-        <h1>Recommendations</h1>
+<section id="recommandations">
+    <h1>Recommendations</h1>
 
-        <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 30px; justify-content: center;">
-            <!-- Card 1 -->
-            <div style="
-                background-color: #324E66;
-                color: #E8EFF4;
-                border-radius: 15px;
-                width: 280px;
-                padding: 25px;
-                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-                font-style: italic;
-                transition: transform 0.3s ease;
-            " onmouseover="this.style.transform='translateY(-5px)';" 
-              onmouseout="this.style.transform='none';">
-                “ Jean is a very quick learner and quickly grasps key concepts of web development. 
-                He has a great attitude and is an excellent team player. ”
-            </div>
-
-            <!-- Card 2 -->
-            <div style="
-                background-color: #324E66;
-                color: #E8EFF4;
-                border-radius: 15px;
-                width: 280px;
-                padding: 25px;
-                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-                font-style: italic;
-                transition: transform 0.3s ease;
-            " onmouseover="this.style.transform='translateY(-5px)';" 
-              onmouseout="this.style.transform='none';">
-                “ Working with Jean has been an awesome experience. 
-                He’s highly knowledgeable and always goes the extra step to make sure everything is right. ”
-            </div>
-
-            <!-- Card 3 -->
-            <div style="
-                background-color: #324E66;
-                color: #E8EFF4;
-                border-radius: 15px;
-                width: 280px;
-                padding: 25px;
-                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-                font-style: italic;
-                transition: transform 0.3s ease;
-            " onmouseover="this.style.transform='translateY(-5px)';" 
-              onmouseout="this.style.transform='none';">
-                “ I had worked along with Jean during the initial phase of our project. 
-                He’s a committed resource with in-depth knowledge and a strong technical mindset. ”
-            </div>
+    <!-- Existing cards -->
+    <div id="all_recommendations" style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 30px; justify-content: center;">
+        <!-- Card 1 -->
+        <div style="
+            background-color: #324E66;
+            color: #E8EFF4;
+            border-radius: 15px;
+            width: 280px;
+            padding: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            font-style: italic;
+            transition: transform 0.3s ease;
+        " onmouseover="this.style.transform='translateY(-5px)';" 
+          onmouseout="this.style.transform='none';">
+            “ Jean is a very quick learner and quickly grasps key concepts of web development. 
+            He has a great attitude and is an excellent team player. ”
         </div>
 
-        <!-- Recommendation Form -->
-        <div style="margin-top: 60px; text-align: center;">
-            <h3>Leave a Recommendation</h3>
-            <form style="margin-top: 20px;">
-                <input type="text" placeholder="Name (Optional)" 
-                       style="width: 60%; padding: 10px; margin-bottom: 10px; border: 1px solid #9DB6C9; border-radius: 5px;"><br>
-                <textarea placeholder="Message" rows="4" 
-                          style="width: 60%; padding: 10px; border: 1px solid #9DB6C9; border-radius: 5px;"></textarea><br>
-                <button type="submit" 
-                        style="margin-top: 15px; padding: 10px 25px; border: none; background-color: #5F7B94; color: #E8EFF4; border-radius: 8px; cursor: pointer; transition: 0.3s;">
-                    Submit
-                </button>
-            </form>
+        <!-- Card 2 -->
+        <div style="
+            background-color: #324E66;
+            color: #E8EFF4;
+            border-radius: 15px;
+            width: 280px;
+            padding: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            font-style: italic;
+            transition: transform 0.3s ease;
+        " onmouseover="this.style.transform='translateY(-5px)';" 
+          onmouseout="this.style.transform='none';">
+            “ Working with Jean has been an awesome experience. 
+            He’s highly knowledgeable and always goes the extra step to make sure everything is right. ”
         </div>
-    </section>
 
+        <!-- Card 3 -->
+        <div style="
+            background-color: #324E66;
+            color: #E8EFF4;
+            border-radius: 15px;
+            width: 280px;
+            padding: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            font-style: italic;
+            transition: transform 0.3s ease;
+        " onmouseover="this.style.transform='translateY(-5px)';" 
+          onmouseout="this.style.transform='none';">
+            “ I had worked along with Jean during the initial phase of our project. 
+            He’s a committed resource with in-depth knowledge and a strong technical mindset. ”
+        </div>
+    </div>
+
+    <!-- Recommendation Form -->
+    <div style="margin-top: 60px; text-align: center;">
+        <h3>Leave a Recommendation</h3>
+        <form onsubmit="event.preventDefault(); addRecommendation();" style="margin-top: 20px;">
+            <input type="text" placeholder="Name (Optional)" 
+                   style="width: 60%; padding: 10px; margin-bottom: 10px; border: 1px solid #9DB6C9; border-radius: 5px;"><br>
+            <textarea id="new_recommendation" placeholder="Message" rows="4" 
+                      style="width: 60%; padding: 10px; border: 1px solid #9DB6C9; border-radius: 5px;"></textarea><br>
+            <button type="submit" 
+                    style="margin-top: 15px; padding: 10px 25px; border: none; background-color: #5F7B94; color: #E8EFF4; border-radius: 8px; cursor: pointer; transition: 0.3s;">
+                Submit
+            </button>
+        </form>
+    </div>
+
+    <!-- Popup message -->
+    <div id="popup" style="visibility: hidden; position: fixed; top: 40%; left: 50%;
+        transform: translate(-50%, -50%); background-color: #324E66; color: #E8EFF4;
+        padding: 25px 40px; border-radius: 10px; text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+        <p>✅ Thank you for your recommendation!</p>
+        <button onclick="showPopup(false)" 
+            style="margin-top: 10px; padding: 8px 15px; border: none; border-radius: 5px;
+            background-color: #5F7B94; color: #E8EFF4; cursor: pointer;">
+            Close
+        </button>
+    </div>
+</section>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
 
 
 </body>
