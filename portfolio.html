@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+    <!--color palette: #9DB6C9 #E8EFF4  #9DB6C9  #5F7B94  #324E66  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio JM</title>
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #E8EFF4;
+            color: #324E66;
+        }
+
+        /* Header bar */
+        header {
+            background-color: #324E66;
+            color: #E8EFF4;
+            display: flex;
+            justify-content: space-between; /*PERMET DE METTRE DE LESPACE ENTRE LE titre Jean M et les nav*/
+            align-items: center;
+            padding: 15px 40px;
+        }
+
+        /* Nav links */
+        nav a {
+            color: #E8EFF4;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #A7C7E7;
+            text-decoration: underline;
+        }
+        img{
+            width: 20%;
+        }
+        section{
+            align-items: center;
+            gap: 40px;
+            background-color: #E8EFF4;
+            padding: 60px 10%;
+            color: #324E66;
+        }
+        div{
+            max-width: 80%;
+        }
+        h1{
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #324E66;
+        }
+        p{
+            font-size: 18px;
+            line-height: 1.6;
+            color: #5F7B94;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div>Jean M</div>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#recommandations">Recommandations</a>
+        </nav>
+    </header>
+
+    <section id="about" style="justify-content: center;display: flex;">
+    <img src="boy.png" alt="boy" style="border-radius: 50%;box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        
+
+        <div>
+            <h1>Hi, I’m Jean 👋</h1>
+            <p>
+                I’m a Software Development graduate passionate about creating clean, 
+                efficient, and user-focused applications. I love exploring new technologies 
+                and adapting quickly to different tools and frameworks. I’m driven by 
+                curiosity, problem-solving, and the satisfaction of turning ideas into reliable, 
+                meaningful software that improves the user experience.
+            </p>
+        </div>
+
+
+    </section>
+    <section id="skills" >
+        
+        <h1 >My Skills</h1>
+        
+        <!-- flex-wrap: wrap; /* allows wrapping to the next line -->
+        <div style="margin: top 20px;display: flex;gap: 40px ;flex-wrap: wrap;padding-bottom: 2%;justify-content: center;">
+            <!-- Card 1 -->
+            <div style="background-color: #324E66;color: #E8EFF4;border-radius: 15px;
+                width: 250px;padding: 20px;box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;gap: 1%;" 
+                onmouseover="this.style.transform='translateY(-5px)';" 
+                onmouseout="this.style.transform='none';">
+                <h3 style="margin-top: 0;">HTML</h3>
+                <p style="color:#E8EFF4">2 years experience</p>
+            </div>
+            <br>
+            <!-- Card 2 -->
+            <div style="background-color: #324E66;color: #E8EFF4;border-radius: 15px;
+                width: 250px;padding: 20px;box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;" 
+                onmouseover="this.style.transform='translateY(-5px)';" 
+                onmouseout="this.style.transform='none';">
+                <h3 style="margin-top: 0;">HTML</h3>
+                <p style="color:#E8EFF4">2 years experience</p>
+            </div>
+            <!-- Card 3 -->
+            <div style="background-color: #324E66;color: #E8EFF4;border-radius: 15px;
+                width: 250px;padding: 20px;box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;" 
+                onmouseover="this.style.transform='translateY(-5px)';" 
+                onmouseout="this.style.transform='none';">
+                <h3 style="margin-top: 0;">javascript</h3>
+                <p style="color:#E8EFF4">1 years experience</p>
+            </div>
+            <!-- Card 4 -->
+            <div style="background-color: #324E66;color: #E8EFF4;border-radius: 15px;
+                width: 250px;padding: 20px;box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;" 
+                onmouseover="this.style.transform='translateY(-5px)';" 
+                onmouseout="this.style.transform='none';">
+                <h3 style="margin-top: 0;">java</h3>
+                <p style="color:#E8EFF4">2 years experience</p>
+            </div>
+            <!-- Card 5 -->
+            <div style="background-color: #324E66;color: #E8EFF4;border-radius: 15px;
+                width: 250px;padding: 20px;box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;" 
+                onmouseover="this.style.transform='translateY(-5px)';" 
+                onmouseout="this.style.transform='none';">
+                <h3 style="margin-top: 0;">react</h3>
+                <p style="color:#E8EFF4">1 years experience</p>
+            </div>
+            <!-- Card 6 -->
+            <div style="background-color: #324E66;color: #E8EFF4;border-radius: 15px;
+                width: 250px;padding: 20px;box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;" 
+                onmouseover="this.style.transform='translateY(-5px)';" 
+                onmouseout="this.style.transform='none';">
+                <h3 style="margin-top: 0;">node</h3>
+                <p style="color:#E8EFF4">1 years experience</p>
+            </div>
+            <!-- Card 7 -->
+            <div style="background-color: #324E66;color: #E8EFF4;border-radius: 15px;
+                width: 250px;padding: 20px;box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;" 
+                onmouseover="this.style.transform='translateY(-5px)';" 
+                onmouseout="this.style.transform='none';">
+                <h3 style="margin-top: 0;">css</h3>
+                <p style="color:#E8EFF4">2 years experience</p>
+            </div>
+        </div>
+        
+            
+        
+    </section>
+        <!-- ===== Projects Section ===== -->
+    <section id="projects">
+        <h1>Projects</h1>
+
+        <div style="margin-top: 30px;">
+            <h3>Chatbot</h3>
+            <ul>
+                <li>
+                    Developed a secure website integrated with a chatbot for an automobile client 
+                    using <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, and <b>IBM Watson Assistant</b>.
+                </li>
+            </ul>
+
+            <h3>Sentiment Analyzer</h3>
+            <ul>
+                <li>
+                    Developed and deployed a sentiment analyzer for the box reviews section of an 
+                    eCommerce platform using <b>IBM NLU</b>.
+                </li>
+            </ul>
+
+            <h3>Fashion Website</h3>
+            <ul>
+                <li>
+                    Created a styled multi-page website for a new player in the fashion industry and 
+                    integrated it with a shopping cart using <b>Stripe</b> for payment gateway.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===== Recommendations Section ===== -->
+    <section id="recommandations">
+        <h1>Recommendations</h1>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 30px; justify-content: center;">
+            <!-- Card 1 -->
+            <div style="
+                background-color: #324E66;
+                color: #E8EFF4;
+                border-radius: 15px;
+                width: 280px;
+                padding: 25px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                font-style: italic;
+                transition: transform 0.3s ease;
+            " onmouseover="this.style.transform='translateY(-5px)';" 
+              onmouseout="this.style.transform='none';">
+                “ Jean is a very quick learner and quickly grasps key concepts of web development. 
+                He has a great attitude and is an excellent team player. ”
+            </div>
+
+            <!-- Card 2 -->
+            <div style="
+                background-color: #324E66;
+                color: #E8EFF4;
+                border-radius: 15px;
+                width: 280px;
+                padding: 25px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                font-style: italic;
+                transition: transform 0.3s ease;
+            " onmouseover="this.style.transform='translateY(-5px)';" 
+              onmouseout="this.style.transform='none';">
+                “ Working with Jean has been an awesome experience. 
+                He’s highly knowledgeable and always goes the extra step to make sure everything is right. ”
+            </div>
+
+            <!-- Card 3 -->
+            <div style="
+                background-color: #324E66;
+                color: #E8EFF4;
+                border-radius: 15px;
+                width: 280px;
+                padding: 25px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                font-style: italic;
+                transition: transform 0.3s ease;
+            " onmouseover="this.style.transform='translateY(-5px)';" 
+              onmouseout="this.style.transform='none';">
+                “ I had worked along with Jean during the initial phase of our project. 
+                He’s a committed resource with in-depth knowledge and a strong technical mindset. ”
+            </div>
+        </div>
+
+        <!-- Recommendation Form -->
+        <div style="margin-top: 60px; text-align: center;">
+            <h3>Leave a Recommendation</h3>
+            <form style="margin-top: 20px;">
+                <input type="text" placeholder="Name (Optional)" 
+                       style="width: 60%; padding: 10px; margin-bottom: 10px; border: 1px solid #9DB6C9; border-radius: 5px;"><br>
+                <textarea placeholder="Message" rows="4" 
+                          style="width: 60%; padding: 10px; border: 1px solid #9DB6C9; border-radius: 5px;"></textarea><br>
+                <button type="submit" 
+                        style="margin-top: 15px; padding: 10px 25px; border: none; background-color: #5F7B94; color: #E8EFF4; border-radius: 8px; cursor: pointer; transition: 0.3s;">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </section>
+
+
+
+</body>
+</html>
